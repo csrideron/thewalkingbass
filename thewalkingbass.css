@@ -2,7 +2,7 @@ html
 {
     background-image: radial-gradient(ellipse at center, #262626, black 50%);
     font-family: 'Lato', sans-serif;
-    color: rgb(238, 238, 238);
+    color: white;
     margin: 0px;
     padding: 0px;
     overflow: auto;
@@ -25,11 +25,11 @@ a
     overflow: hidden;
 }
 
-.line1
+.line
 {
     height: 1px;
     margin: 10px 0;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, rgb(238, 238, 238)), to(rgba(0, 0, 0, 0)));
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, white), to(rgba(0, 0, 0, 0)));
     border: 0;
 }
 
@@ -190,7 +190,6 @@ li
 
 .imdb-media-button:active 
 {
-    background-color: rgb(238, 238, 238);;
     transform: translateY(4px);
 }
 
@@ -233,7 +232,6 @@ li
 
 .upwork-media-button:active 
 {
-    background-color: rgb(238, 238, 238);;
     transform: translateY(4px);
 }
 
@@ -265,7 +263,7 @@ li
 {
     background-color: black;
     background-image: radial-gradient(#262626, black);
-    border: groove 3px rgb(238, 238, 238);;
+    border: groove 3px white;
     border-radius: 15px;
     font: inherit;
     color: white;
@@ -282,12 +280,12 @@ li
 .contactbutton:hover 
 { 
     opacity: 0.8;
-    border: groove 2px rgb(238, 238, 238);; 
+    border: groove 2px white; 
     box-shadow: 1px 5px 5px #161616;
 }
 
 .contactbutton:active 
 {
-    background-color: rgb(238, 238, 238);;
+    background-color: white;
     transform: translateY(4px);
 }
