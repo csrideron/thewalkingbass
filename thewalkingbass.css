@@ -1,0 +1,241 @@
+html 
+{
+    background-image: radial-gradient(ellipse at center, #262626, black 50%);
+    font-family: 'Lato', sans-serif;
+    color: silver;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+    font-weight: 100;        
+}
+
+body
+{
+    border: 3px outset;
+    border-color: #161616;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px #161616;
+    margin: 5vh;
+    height: 100%;
+}
+
+.line1
+{
+    height: 1px;
+    margin: 10px 0;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, silver), to(rgba(0, 0, 0, 0)));
+    border: 0;
+}
+
+.headercontent
+{
+    /* background-color: white; */
+    margin: 0px;
+}
+
+.maincontent
+{
+    /* background-color: red; */
+    width: 100%;
+    overflow: auto;
+}
+
+.maingrid
+{
+    /* background-color: brown; */
+    display: grid;
+    grid-template-columns: auto, auto;
+    gap: 10px;
+    margin: 1rem;
+    overflow: auto;
+}
+
+.column1
+{
+    grid-column: 1/2;
+    margin: 1rem;
+}
+
+.headshotcontainer
+{
+    /* background-color: orange; */
+    width: min-content;
+    margin: 1rem;
+
+}
+
+.headshot
+{
+    width: 33vw;
+    height: auto;
+    margin: 10px;
+    border-radius: 15%;
+}
+
+.column2
+{
+    grid-column: 2/2;
+    margin: 1rem;
+}
+
+.bio
+{
+    /* background-color: yellow; */
+    width: 100%;
+}
+
+.biocontent
+{
+    padding: 1vw;
+}
+
+.reels 
+{
+    /* background-color: green; */
+    width: 100%;
+}
+
+.reelscontent
+{
+    padding: 1vw;
+}
+
+.gear
+{
+    /* background-color: lime; */
+    overflow: auto;
+}
+
+.geargrid
+{
+    /* background-color: brown; */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 1rem;
+    table-layout: fixed;
+}
+
+li::before
+{
+    content: ' \01D122';
+    margin-left: -20px; 
+    margin-right: 10px;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+.gearcolumn1
+{
+    grid-column: 1/2;
+    margin: 1rem;
+    /* background-color: pink; */
+}
+
+.gearcolumn2
+{
+    grid-column: 2/2;
+    margin: 1rem;
+    /* background-color: orange; */
+}
+
+.linkworkgrid
+{
+    display: grid;
+    grid-template-columns: auto, auto;
+    gap: 10px;
+    margin: 1rem;
+    overflow: auto;
+}
+
+.links
+{
+    /* background-color: blue; */
+    margin: 1rem;
+    height: min-content;
+    grid-column: 2/2;
+}
+
+.imdb-media-button
+{
+    background-color: black;
+    background-image: radial-gradient( center at 25% white, black);
+    border: groove 3px #DBA506;
+    border-radius: 15px;
+    font: inherit;
+    color: #DBA506;
+    font-size: 20px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1vw;
+    width: min-content;
+    height: auto;
+    margin: 1rem;
+    cursor: pointer;
+}
+.imdb-media-button:hover 
+{ 
+    opacity: 0.8;
+    border: groove 2px; 
+}
+
+.imdb-media-button:active 
+{
+    background-color: silver;
+    transform: translateY(4px);
+}
+
+.imdb-icon
+{
+    width: 4vw;
+    height: auto;
+}
+
+.line2
+{
+    height: 1px;
+    margin:1vh;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #DBA506), to(rgba(0, 0, 0, 0)));
+    border: 0;
+}
+
+.recentwork
+{
+    grid-column: 1/2;
+    /* background-color: indigo; */
+    margin: 1rem;
+}
+
+.contactbutton
+{
+    background-color: black;
+    background-image: radial-gradient(#262626, black);
+    border: groove 3px silver;
+    border-radius: 15px;
+    font: inherit;
+    color: white;
+    font-size: 64px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: min-content;
+    height: auto;
+    margin: 1rem;
+    cursor: pointer;
+
+}
+
+.contactbutton:hover 
+{ 
+    opacity: 0.8;
+    border: groove 2px silver; 
+    box-shadow: 1px 5px 5px #161616;
+}
+
+.contactbutton:active 
+{
+    background-color: silver;
+    transform: translateY(4px);
+}
