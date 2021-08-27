@@ -21,6 +21,8 @@ body
 
 a
 {
+    font: inherit;
+    color: inherit;
     text-decoration: none;
     overflow: hidden;
 }
@@ -106,6 +108,14 @@ a
     padding: 1vw;
 }
 
+audio {
+    filter: sepia(0%) saturate(70%) contrast(100%) invert(90%);
+    width: 25vw;
+    height: 5vh;
+    border: 1px solid orange;
+    border-radius: 20px;
+}
+
 .gear
 {
     /* background-color: lime; */
@@ -163,6 +173,56 @@ li
     margin: 1rem;
     height: min-content;
     grid-column: 2/2;
+    align-items: center;
+}
+
+.backstage-media-button
+{
+    background-color: black;
+    background-image: radial-gradient( center at 25% white, black);
+    border: groove 3px white;
+    border-radius: 15px;
+    font: inherit;
+    color: white;
+    font-size: 20px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1vw;
+    width: 10vw;
+    height: auto;
+    margin: 1rem;
+    cursor: pointer;
+    overflow-x: hidden;
+}
+.backstagetext
+{
+    position: relative;
+    right: 10%;
+}
+.backstage-media-button:hover 
+{ 
+    opacity: 0.8;
+    border: groove 2px; 
+}
+
+.backstage-media-button:active 
+{
+    transform: translateY(4px);
+}
+
+.backstage-icon
+{
+    width: 4vw;
+    height: auto;
+    border-radius: 10px;
+}
+
+.linebackstage
+{
+    height: 1px;
+    margin:1vh;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, white), to(rgba(0, 0, 0, 0)));
+    border: 0;
 }
 
 .imdb-media-button
@@ -181,6 +241,7 @@ li
     height: auto;
     margin: 1rem;
     cursor: pointer;
+    overflow-x: hidden;
 }
 .imdb-media-button:hover 
 { 
@@ -223,6 +284,7 @@ li
     height: auto;
     margin: 1rem;
     cursor: pointer;
+    overflow-x: hidden;
 }
 .upwork-media-button:hover 
 { 
