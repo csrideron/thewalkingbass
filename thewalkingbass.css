@@ -199,6 +199,8 @@ li
 {
     display: flex;
     position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .backstage-media-button:hover 
