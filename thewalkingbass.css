@@ -198,7 +198,8 @@ li
 .backstagetext
 {
     display: flex;
-    position: absolute;
+    background-color: green;
+    position: relative;
     align-items: center;
     justify-content: center;
 }
