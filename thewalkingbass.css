@@ -194,11 +194,13 @@ li
     cursor: pointer;
     overflow-x: hidden;
 }
+
 .backstagetext
 {
+    display: flex;
     position: relative;
-    right: 10%;
 }
+
 .backstage-media-button:hover 
 { 
     opacity: 0.8;
