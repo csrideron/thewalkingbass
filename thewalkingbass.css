@@ -55,7 +55,7 @@ a
     grid-template-columns: auto, auto;
     gap: 10px;
     margin: 1rem;
-    overflow: auto;
+    overflow: wrap;
 }
 
 .column1
@@ -108,12 +108,13 @@ a
     padding: 1vw;
 }
 
-audio {
+audio 
+{
     filter: sepia(0%) saturate(70%) contrast(100%) invert(90%);
     width: 25vw;
     height: 5vh;
     border: 1px solid orange;
-    border-radius: 20px;
+    border-radius: 20%;
 }
 
 .gear
