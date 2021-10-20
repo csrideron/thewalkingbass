@@ -114,6 +114,7 @@ audio
     width: 25vw;
     height: 5vh;
     border: 1px solid orange;
+    border-radius: 20px;
 }
 
 .gear
