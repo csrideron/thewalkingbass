@@ -318,6 +318,49 @@ li
 }
 
 
+.fiverr-media-button
+{
+    background-color: black;
+    background-image: radial-gradient( center at 25% white, black);
+    border: groove 3px #DBA506;
+    border-radius: 15px;
+    font: inherit;
+    color: #DBA506;
+    font-size: 20px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1vw;
+    width: 10vw;
+    height: auto;
+    margin: 1rem;
+    cursor: pointer;
+    overflow-x: hidden;
+}
+.fiverr-media-button:hover 
+{ 
+    opacity: 0.8;
+    border: groove 2px; 
+}
+
+.fiverr-media-button:active 
+{
+    transform: translateY(4px);
+}
+
+.fiverr-icon
+{
+    width: 4vw;
+    height: auto;
+}
+
+.fiverrimdb
+{
+    height: 1px;
+    margin:1vh;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #DBA506), to(rgba(0, 0, 0, 0)));
+    border: 0;
+}
+
 
 .recentwork
 {
