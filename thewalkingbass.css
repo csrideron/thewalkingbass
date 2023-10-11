@@ -1,105 +1,113 @@
-html {
-    background-image: radial-gradient(ellipse at center, #262626, black 50%);
-    font-family: 'Lato', sans-serif;
+html
+{
+    text-align: center;
+    background-color: black;
     color: white;
-    margin: 0;
-    padding: 0;
+    height: min-content;
+}
+
+body
+{
+    font-family: 'Lato', sans-serif;    
     font-weight: 100;
+    height: min-content;
+    background-image: radial-gradient(#262626, black);
+
 }
 
-body {
-    border: 3px outset;
-    border-color: #161616;
-    border-radius: 40px;
-    box-shadow: 5px 5px 5px #161616;
-    margin: 5vh;
-    padding: 2vh;
-    min-height: 100vh;
-    box-sizing: border-box;
+h1, h2, h3, h4, h5, h6
+{
+    padding: 1vh;
+    margin: 0;
+    font-weight: 200;
 }
 
-a {
-    font: inherit;
-    color: inherit;
-    text-decoration: none;
-    overflow: hidden;
-}
-
-.line {
+hr {
     height: 1px;
     margin: 1vh 0;
     background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, white), to(rgba(0, 0, 0, 0)));
     border: 0;
 }
 
-.headercontent {
-    margin: 0;
-    text-align: center;
-    padding: 2vh;
+li
+{
+    font-size: 2.5vw;
+    margin-bottom: 1vh;
+    list-style-type: ' \01D122';
+
 }
 
-.maincontent {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 2vh;
-}
-
-.maingrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2vh;
-}
-
-.column1, .column2 {
-    margin: 1rem 0;
-    text-align: center;
-}
-
-.headshot {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 15%;
-}
-
-.reelscontent audio {
-    width: 100%;
-    border: 1px solid orange;
-    border-radius: 20px;
-}
-
-.geargrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2vh;
-}
-
-.gearcolumn1, .gearcolumn2 {
-    list-style-type: none;
-    margin: 1rem 0;
-    padding: 0;
-}
-
-.linkworkgrid {
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-}
-
-.links {
-    text-align: center;
-}
-
-.media-button {
-    background-color: black;
-    background-image: radial-gradient(center at 25% white, black);
-    border: groove 3px white;
-    border-radius: 15px;
-    font: inherit;
+a
+{
     color: white;
-    font-size: 16px;
-    padding: 1vh 2vw;
+    text-decoration: none;
+}
+
+audio
+{
+    width: 100%;
+    height: 5vh;
+}
+
+#firstsection
+{
+    margin: 2.5%;
+}
+
+
+#secondsection
+{
+    margin: 2.5%;
+
+}
+#headshot
+{
+    display: inline-block;
+    width: 48%;
+    left: 0;
+    vertical-align: middle;
+}
+#reels
+{
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+
+#thirdsection
+{
+    margin: 2.5%;
+}
+#gear
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 48%;
+}
+#recentwork
+{
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+
+#fourthsection
+{
+    margin: 2.5%;
+}
+
+.linkbutton
+{
+    height: min-content;
+    width: 25%;
+    background-image: radial-gradient(#262626, black);
+    border: groove 3px white;
+    border-radius: 2.5vw;
+    color: white;
+    padding: 1vh;
+    font: inherit;
+    margin-inline: 1vw;
+    font-size: 2vh;
     cursor: pointer;
     overflow-x: hidden;
     text-decoration: none;
@@ -107,53 +115,46 @@ a {
     transition: all 0.3s;
 }
 
-.media-button:hover {
-    opacity: 0.8;
-    border: groove 2px;
+.icon
+{
+    width: 10vw;
 }
 
-.media-button:active {
-    transform: translateY(4px);
+#footer
+{
+    margin: 2.5%;
+    text-align: center;
+    padding-bottom: 1.25%;
+    padding-top: 1.25%;
+
 }
 
-.icon {
-    width: 20px;
-    height: auto;
-    border-radius: 10px;
+#contactbutton
+{
+background-image: radial-gradient(#262626, black);
+border: groove 3px white;
+border-radius: 15px;
+font: inherit;
+color: white;
+font-size: 3rem;
+padding: 2.5vw;
+cursor: pointer;
+transition: all 0.3s;
 }
 
-.contactbutton {
-    background-color: black;
-    background-image: radial-gradient(#262626, black);
-    border: groove 3px white;
-    border-radius: 15px;
-    font: inherit;
-    color: white;
-    font-size: 2rem;
-    padding: 1vh 2vw;
-    cursor: pointer;
-    transition: all 0.3s;
-}
 
-.contactbutton:hover {
-    opacity: 0.8;
-    border: groove 2px white;
-    box-shadow: 1px 5px 5px #161616;
-}
-
-.contactbutton:active {
-    background-color: white;
-    transform: translateY(4px);
-}
-
-@media (min-width: 768px) {
-    .maingrid {
-        grid-template-columns: 1fr 1fr;
+@media screen and (max-width: 1024px) {
+    #headshot, #reels {
+      width: 100%;
     }
-}
-
-@media (min-width: 1024px) {
-    .maingrid {
-        grid-template-columns: 1fr 1fr 1fr;
+    audio
+    {
+        width: 80%;
     }
-}
+  }
+
+
+
+
+
+  
